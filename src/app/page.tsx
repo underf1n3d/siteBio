@@ -176,15 +176,22 @@ const ProjectsSection = () => {
                   className="px-5 py-2.5 border border-olive-green/25 dark:border-olive-green/15 hover:border-juicy-orange hover:text-juicy-orange rounded-xl text-sm font-semibold transition-all group/btn flex items-center gap-2"
                 >
                   {t.siteCta}
-                  <span className="inline-block transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5 text-base">↗</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
                 </a>
                 {project.telegram && (
                   <a
                     href={`https://t.me/${project.telegram.replace('@', '')}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 bg-olive-green/10 hover:bg-juicy-orange hover:text-cream-peach dark:bg-olive-green/5 dark:hover:bg-juicy-orange dark:hover:text-dark-bg rounded-xl text-sm font-semibold transition-all duration-300"
+                    className="px-5 py-2.5 bg-olive-green/10 hover:bg-juicy-orange hover:text-cream-peach dark:bg-olive-green/5 dark:hover:bg-juicy-orange dark:hover:text-dark-bg rounded-xl text-sm font-semibold transition-all duration-300 flex items-center gap-2"
                   >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M1.946 9.315c-.522-.174-.527-.455.01-.664L21.044 1.5c.647-.236 1.226.148 1.011.824l-6.662 19.33c-.22.65-.63.67-1.15.22l-5.75-4.57-2.73 2.62c-.31.3-.57.3-.85-.14l-1.07-5.06-2.9-1.39zm15.11-6.19-12.86 6.8 3.51 1.7 8.35-7.39c.39-.36.75-.17.46.1l-6.85 6.64-.17 4.3 2.45-2.2 4.19 3.2 5.03-15.15z"/>
+                    </svg>
                     Telegram
                   </a>
                 )}
