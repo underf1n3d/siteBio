@@ -19,6 +19,14 @@ export default function ClientBody({
   const mouseY = useMotionValue(0);
 
   useEffect(() => {
+    const versionField = document.getElementById('app-version') as HTMLInputElement | null;
+    if (versionField) {
+      console.log(
+        `%c[System] Version: ${versionField.value} `,
+        'background: #1a202c; color: #F2F5F0; border: 1px solid #A3BF6F; padding: 2px 6px; border-radius: 4px; font-family: monospace;'
+      );
+    }
+
     console.log(
       '%c Ну что ты смотришь? Тут нет бекенда 😎 ',
       'background: #FF8234; color: #1a202c; font-size: 18px; font-weight: bold; padding: 8px 16px; border-radius: 8px;'
@@ -33,7 +41,7 @@ export default function ClientBody({
     );
     console.log(
       '%c А вообще, если ты сюда добрался — респект. Напиши мне в Telegram: @underfined 🤝 ',
-      'background: #FAE6D8; color: #1a202c; font-size: 13px; padding: 6px 12px; border-radius: 6px; font-style: italic;'
+      'background: #F2F5F0; color: #1a202c; font-size: 13px; padding: 6px 12px; border-radius: 6px; font-style: italic;'
     );
   }, []);
 
@@ -58,6 +66,7 @@ export default function ClientBody({
   return (
     <LangContext.Provider value={{ lang, setLang }}>
       <body onMouseMove={handleMouseMove} className="min-h-full flex flex-col relative bg-cream-peach text-dark-bg dark:bg-dark-bg dark:text-cream-peach">
+        <input type="hidden" id="app-version" value={process.env.APP_VERSION || "1.0.0"} />
         <div className="absolute top-4 right-4 z-50 flex items-center gap-3">
           <AudioPlayer />
           <LangSwitcher />
