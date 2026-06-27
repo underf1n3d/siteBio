@@ -12,6 +12,16 @@ type SectionName = 'Проекты' | 'Обо мне' | 'Контакты';
 const projectsData = [
   {
     num: "01",
+    title: { ru: "МантисПэй", en: "MantisPay" },
+    description: {
+      ru: "Надежный платежный шлюз для ваших услуг бизнеса.",
+      en: "A reliable payment gateway for your business services.",
+    },
+    tech: ["In development", "Next.js", "Kotlin", "Spring", "C#", "Golang", "PostgreSQL", "Redis"],
+    site: "pay.kqrf.click",
+  },
+  {
+    num: "02",
     title: { ru: "ЮУМК Расписание Бот", en: "YUMK Schedule Bot" },
     description: {
       ru: "Неофициальная отказоустойчивая платформа для получения расписания ЮУМК. Двухуровневое кеширование, удобный API, максимальная стабильность.",
@@ -22,7 +32,7 @@ const projectsData = [
     telegram: "@yumk_rasp_bot",
   },
   {
-    num: "02",
+    num: "03",
     title: { ru: "HuesosMail", en: "HuesosMail" },
     description: {
       ru: "Приватный и защищённый почтовый сервис. Передовые протоколы шифрования и строгие правила конфиденциальности.",
@@ -33,7 +43,7 @@ const projectsData = [
     telegram: "@huesos_mail",
   },
   {
-    num: "03",
+    num: "04",
     title: { ru: "ConnectInfoApi", en: "ConnectInfoApi" },
     description: {
       ru: "Молниеносный API на Cloudflare Workers. Информация об IP, генерация баннеров, минимальный веб-интерфейс для документации.",
@@ -43,7 +53,7 @@ const projectsData = [
     site: "ip.kqrf.click",
   },
   {
-    num: "04",
+    num: "05",
     title: { ru: "QR Art Studio", en: "QR Art Studio" },
     description: {
       ru: "Помощник по созданию максимально гибких и кастомизированных QR-кодов с интеграцией логотипов и брендовых цветов.",
@@ -51,16 +61,6 @@ const projectsData = [
     },
     tech: ["Next.js", "TypeScript", "Canvas API"],
     site: "qr.kqrf.click",
-  },
-  {
-    num: "05",
-    title: { ru: "МантисПэй", en: "MantisPay" },
-    description: {
-      ru: "Надежный платежный шлюз для ваших услуг бизнеса.",
-      en: "A reliable payment gateway for your business services.",
-    },
-    tech: ["In development", "Kotlin", "Spring", "C#", "Golang", "Postgresql", "Redis"],
-    site: "pay.kqrf.click",
   },
 ];
 
