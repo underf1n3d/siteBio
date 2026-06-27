@@ -14,7 +14,7 @@ const projectsData = [
     num: "01",
     title: { ru: "МантисПэй", en: "MantisPay" },
     description: {
-      ru: "Надежный платежный шлюз для ваших услуг бизнеса.",
+      ru: "Надежный платежный шлюз для ваших услуг и бизнеса.",
       en: "A reliable payment gateway for your business services.",
     },
     tech: ["In development", "Next.js", "Kotlin", "Spring", "C#", "Golang", "PostgreSQL", "Redis"],
