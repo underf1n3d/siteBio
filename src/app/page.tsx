@@ -52,6 +52,16 @@ const projectsData = [
     tech: ["Next.js", "TypeScript", "Canvas API"],
     site: "qr.kqrf.click",
   },
+  {
+    num: "05",
+    title: { ru: "МантисПэй", en: "MantisPay" },
+    description: {
+      ru: "Надежный платежный шлюз для ваших услуг бизнеса.",
+      en: "A reliable payment gateway for your business services.",
+    },
+    tech: ["In development", "Kotlin", "Spring", "C#", "Golang", "Postgresql", "Redis"],
+    site: "pay.kqrf.click",
+  },
 ];
 
 const i18n = {
